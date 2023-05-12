@@ -6,15 +6,15 @@ let typewriter = new Typewriter(app, {
 });
  
 typewriter
+  .pauseFor(2000)
+  .typeString('Front-End Developer.')
   .pauseFor(2500)
-  .typeString('Desarrollo sitios web.')
-  .pauseFor(300)
-  .deleteChars(30)
-  .typeString('Creo diseños atractivos.')
-  .pauseFor(300)
   .deleteChars(40)
-  .typeString('Optimizo la experiencia del usuario.')
-  .pauseFor(300)
-  .deleteChars(30)
+  .typeString('Creo diseños atractivos.')
+  .pauseFor(2500)
+  .deleteChars(40)
+  .typeString('Mejoro la experiencia del usuario.')
+  .pauseFor(2500)
+  .deleteChars(40)
   .start();
 

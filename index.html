@@ -56,11 +56,25 @@
     <section class="hero align-items-stretch">
       <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
         <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/foto liz.jpeg" alt="Foto de Jane Doe">
-        <h1>Qué tal!👋, soy Lizbeth Robles </h1>
+        <h1>¡Mucho gusto!👋, soy Lizbeth</h1>
         <!--<h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>-->
 
         <!--Animación con JavaScript-->
         <h2 class="text-primary mb-4" id="typewriter"></h2>
+        <div class="iconos-redes-sociales-principal d-flex flex-wrap align-items-center justify-content-center">
+          <a href="https://github.com/lizrobles20" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lizirobles20/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+        <a href="cv/Profile.pdf" download>
+          <button type="button" class="btn btn-info">
+            Descargar CV
+            <i class="bi bi-arrow-down-circle-fill"></i>
+          </button>
+        </a>
       </div>
       <div class="hero-inferior">
         <img class="hero-inferior-imagen img-fluid" src="imagenes/Static-website.png" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
@@ -70,8 +84,8 @@
     <!-- Sobre mi -->
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
       <div class="contenedor">
-        <h2 class="seccion-titulo">Conoce a Lizbeth Robles 👩‍💻</h2>
-        <p class="seccion-texto">Profesional apasionada y altamente capacitada en el desarrollo de interfaces de usuario atractivas y funcionales. Su objetivo principal es crear experiencias de usuario excepcionales, combinando habilidades técnicas sólidas con una mentalidad creativa y orientada al detalle. Con un profundo conocimiento de los lenguajes de programación y las tecnologías web más recientes, tiene la capacidad de convertir diseños conceptuales en aplicaciones web interactivas y altamente receptivas. Es una profesional altamente colaborativa y orientada al trabajo en equipo</p>
+        <h2 class="seccion-titulo">Conoce a Lizbeth 👩‍💻</h2>
+        <p class="seccion-texto">Profesional apasionada y altamente capacitada en el desarrollo de interfaces de usuario atractivas y funcionales. Su objetivo principal es crear experiencias de usuario excepcionales, combinando habilidades técnicas sólidas con una mentalidad creativa y orientada al detalle. Con un profundo conocimiento de los lenguajes de programación y las tecnologías web más recientes, tiene la capacidad de convertir diseños conceptuales en aplicaciones web interactivas y altamente receptivas. Es una profesional altamente colaborativa y orientada al trabajo en equipo.</p>
       </div>
     </section>
 
@@ -82,7 +96,7 @@
           <!-- Desarrollo Web -->
           <div class="columna col-12 col-md-4">
             <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p class="experiencia-titulo">Desarrollo Front-End</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
             <div class="badges-contenedor">
               <span class="badge text-bg-primary">HTML</span>
@@ -93,7 +107,7 @@
           </div>
           <!-- Articulos -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
+            <i class="bi bi-pencil"></i>
             <p class="experiencia-titulo">Diseño UX/UI</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
             <div class="badges-contenedor">
@@ -104,13 +118,12 @@
           </div>
           <!-- Estudiante -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
+            <i class="bi bi-book"></i>
             <p class="experiencia-titulo">Estudiante</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
             <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Sistemas Computacionales</span>
               <span class="badge text-bg-primary">Tecnolochicas PRO</span>
-              <span class="badge text-bg-primary">Desarrollo Web</span>
-              <span class="badge text-bg-primary">Java</span>
             </div>
           </div>
         </div>
@@ -119,7 +132,7 @@
 
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h2 class="seccion-titulo texto-negro">Proyectos recientes</h2>
       <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
       <!-- Galeria de Proyectos -->
       <div class="container text-center proyectos-contenedor">
@@ -127,9 +140,14 @@
           <!-- Proyecto 1 -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/clonaciongoogle.jpg" alt="Proyecto 1">
+              <h3>Clon de Google</h3>
+              <p>Clon de la interfaz de Google con HTML5 y CSS3 creado en el bootcamp de TECNOLOchicas 2023.</p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">HTML5</span>
+                <span class="badge text-bg-primary">CSS3</span>
+              </div>
+              <img src="imagenes/mockup-clon-google.png" alt="Proyecto 1">
               <div class="overlay">
-                <p>Clon de Google</p>
                 <div class="iconos-contenedor">
                   <a href="https://github.com/lizrobles20/cloninterfazgoogle" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-github"></i>
@@ -144,14 +162,22 @@
           <!-- Proyecto 2 -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/proyecto2.png" alt="Proyecto 1">
+              <h3>E-commerce de Repostería</h3>
+              <p>Sitio e-commerce de una repostería con login, carrito de compras y un panel de administrador.</p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">HTML5</span>
+                <span class="badge text-bg-primary">CSS3</span>
+                <span class="badge text-bg-primary">JavaScript</span>
+                <span class="badge text-bg-primary">PHP</span>
+                <span class="badge text-bg-primary">MySQL</span>
+              </div>
+              <img src="imagenes/mockup-proyecto-catra.png" alt="Proyecto 2">
               <div class="overlay">
-                <p>Proyecto 2</p>
                 <div class="iconos-contenedor">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/lizrobles20/shopping_cart_with_admin_panel" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-github"></i>
                   </a>
-                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://catrareposteria.infinityfreeapp.com" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-laptop"></i>
                   </a>
                 </div>
@@ -161,65 +187,20 @@
           <!-- Proyecto 3 -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/proyecto3.png" alt="Proyecto 1">
-              <div class="overlay">
-                <p>Proyecto 3</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="#/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
+              <h3>Laguna de las Ilusiones</h3>
+              <p>Sitio web informativo sobre la vida en la Laguna de las Ilusiones, ubicado en Villahermosa, Tabasco.</p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">HTML5</span>
+                <span class="badge text-bg-primary">CSS3</span>
+                <span class="badge text-bg-primary">JavaScript</span>
               </div>
-            </div>
-          </div>
-          <!-- Proyecto 4 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="imagenes/proyecto4.png" alt="Proyecto 1">
+              <img src="imagenes/mockup-laguna-ilusiones.png" alt="Proyecto 1">
               <div class="overlay">
-                <p>Proyecto 4</p>
                 <div class="iconos-contenedor">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/lizrobles20" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-github"></i>
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Proyecto 5 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="imagenes/proyecto5.png" alt="Proyecto 1">
-              <div class="overlay">
-                <p>Proyecto 5</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Proyecto 6 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="imagenes/proyecto6.png" alt="Proyecto 1">
-              <div class="overlay">
-                <p>Proyecto 6</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://laguna-ilusiones.ujat.mx/" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-laptop"></i>
                   </a>
                 </div>
@@ -234,10 +215,7 @@
           <i class="bi bi-arrow-right-circle-fill"></i>
         </button>
       </a>
-    </section>
-
-    <!-- Articulos -->
-    
+    </section>    
 
     <!-- Testimonios -->
     <section id="testimonios" class="testimonios seccion-clara">
@@ -253,7 +231,7 @@
               <p class="testimonio-texto">Lizbeth ha desarrollado de manera eficiente sus habilidades en programación front-end, demostró ser una gran estudiante y bastante colaborativa con sus compañeras.</p>
               <div class="testimonio-info">
                 <p class="cliente">Nancy Salazar</p>
-                <p class="cargo">Mentora en Startups e Innovación </p>
+                <p class="cargo">Product Manager en U Camp | Mentora en Startups e Innovación</p>
               </div>
             </div>
           </div>
@@ -301,7 +279,7 @@
               Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
             </div>
             <div class="col-12 col-md-4">
-              <a href="mailto:janedoe@micorreo.com">
+              <a href="mailto:lizirobles20@gmail.com">
                 <button type="button">  
                   Contacto
                   <i class="bi bi-envelope-check-fill"></i>
@@ -316,8 +294,8 @@
     <!-- Pie de pagina (footer) -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
       <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
-      <p class="footer-texto text-center">Si lo puedo imaginar,<br>
-        lo puedo programar {💗}</p>
+      <p class="footer-texto text-center">Programar es un superpoder<br>
+        que convierte las ideas en realidad {💫}</p>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
    <!-- <a href="#" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-twitter"></i>  -->     
@@ -338,7 +316,9 @@
       <div class="derechos-de-autor">Plantilla por Nancy Salazar (2022) &#169;<br> Creado por Lizbeth Robles (2023)</div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Links de Script -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <script src="main.js"></script>

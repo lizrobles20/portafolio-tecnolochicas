@@ -19,7 +19,7 @@ section {
   justify-content: center;
 }
 
-h1 {
+h1{
   font-size: 2.5rem;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
@@ -28,10 +28,7 @@ h1 {
 
 .Typewriter__wrapper, .Typewriter__cursor{
   color: #F54768;
-}
-
-.btn-info{
-  background-color: #FF9677;
+  font-size: 2rem;
 }
 
 .seccion-oscura {
@@ -41,11 +38,11 @@ h1 {
 
 .seccion-clara {
   color: black;
-  background-color: white;
+  background-color: #f5f6f7;
 }
 
 .seccion-titulo {
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding: 15px 0;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
@@ -64,6 +61,9 @@ h1 {
   font-size: 1.1rem;
   margin: 20px;
   transition: all .5s;
+  background-color: #FF9677;
+  border: none;
+  padding: 10px
 }
 
 .btn-info:hover{
@@ -88,18 +88,48 @@ h1 {
 }
 
 .hero-principal {
-  padding: 3rem;
+  padding: 1rem;
+  padding-bottom: 3rem;
 }
 
 .hero-imagen-desarrollador {
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   margin: 20px;
 }
 
 .hero-principal h2 {
   font-size: 1.5rem;
   color: #615151;
+}
+
+/* Sección Hero - Redes Sociales*/
+
+.iconos-redes-sociales-principal a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: 2px solid #41436A;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales-principal i {
+  color: #41436A;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales-principal a:hover {
+  background-color: white;
+  border: 2px solid #FF9677;
+}
+
+.iconos-redes-sociales-principal a:hover i {
+  color: #F54768;
 }
 
 /* Sobre mi */
@@ -171,8 +201,9 @@ h1 {
 }
 
 .proyectos-recientes img {
-  height: 100%;
+  height: 280px;
   width: 100%;
+  object-fit: cover;
   padding: 10px;
   border-radius: 10px;
   display: block;
@@ -188,16 +219,10 @@ h1 {
   transition: all 0.2s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.overlay p {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 0;
 }
 
 .proyecto {
@@ -222,22 +247,7 @@ h1 {
   margin: 10px;
 }
 
-/* Articulos */
 
-.articulos {
-  min-height: 500px;
-  padding: 30px;
-}
-
-.articulos .card {
-  width: 80%;
-  max-width: 600px;
-  margin: 20px;
-}
-
-.articulos .card-header {
-  font-weight: bold;
-}
 
 /* Testimonios */
 
@@ -272,7 +282,7 @@ h1 {
   max-width: 70%;
   font-size: 20px;
   text-align: center;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Nunito' sans-serif;
 }
 
 .testimonio-info {
@@ -385,7 +395,7 @@ footer {
 
 .iconos-redes-sociales a:hover {
   background-color: white;
-  border: 2px solid #FF9677;
+  border: 2px solid #974063;
 }
 
 .iconos-redes-sociales a:hover i {
@@ -411,6 +421,12 @@ footer {
   }
   .seccion-texto {
     font-size: 1.1rem;
+  }
+  .seccion-titulo{
+    font-size: 1.9rem;
+  }
+  .proyectos-recientes {
+    padding: 18px;
   }
 }
 
