@@ -1,0 +1,584 @@
+/*Cambios a las variables de Bootstrap*/
+
+:root, [data-bs-theme="light"]{
+  --bs-link-color-rgb: #41436A;
+
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    filter: invert(1) grayscale(100);
+  }
+}
+
+:root, [data-bs-theme="dark"] {
+  --bs-link-color-rgb: #41436A;
+
+  [data-bs-theme=dark] .carousel .carousel-control-next-icon, [data-bs-theme=dark] .carousel .carousel-control-prev-icon, [data-bs-theme=dark].carousel .carousel-control-next-icon, [data-bs-theme=dark].carousel .carousel-control-prev-icon{
+  filter: none;
+  }
+
+  .testimonio-info .cargo{
+    color: #8b8e90;
+  }
+
+  
+}
+
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+}
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.Typewriter__wrapper, .Typewriter__cursor{
+  color: #F54768;
+  font-size: 2rem;
+}
+
+.seccion-oscura {
+  color: #eaedf0;
+  background-color: #41436A;
+}
+
+.seccion-titulo {
+  font-size: 2.3rem;
+  padding: 15px 0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+  transition: all .5s;
+  background-color: #FF9677;
+  border: none;
+  padding: 10px
+}
+
+.btn-info:hover{
+  background-color: #F54768;
+  color: white;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+/* Seccion Hero */
+
+.hero {
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.hero-fondo-svg img{
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  opacity: 0.6;
+  filter: grayscale(90%);
+  transition: all 0.3s;
+}
+
+.fondo-html-svg{
+  top: 50%;
+  left: 5%;
+}
+
+.fondo-css-svg{
+  top: 25%;
+  left: 10%;
+}
+
+.fondo-js-svg{
+  top: 75%;
+  left: 10%;
+}
+
+.fondo-react-svg{
+  top: 50%;
+  right: 5%;
+}
+
+.fondo-bootstrap-svg{
+  top: 25%;
+  right: 10%;
+}
+
+.fondo-vue-svg{
+  top: 75%;
+  right: 10%;
+}
+
+.hero-fondo-svg img:hover{
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: translateY(25px);
+}
+
+.hero-imagen-desarrollador{
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  perspective: 1000px;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.image-wrapper img:last-child {
+  transform: rotateY(180deg);
+}
+
+.hero-imagen-desarrollador:hover .image-wrapper {
+  transform: rotateY(180deg);
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+}
+
+/* Sección Hero - Redes Sociales*/
+
+.iconos-redes-sociales-principal a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: 2px solid;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales-principal i {
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales-principal a:hover {
+  background-color: white;
+  border: 2px solid #FF9677;
+}
+
+.iconos-redes-sociales-principal a:hover i {
+  color: #F54768;
+}
+
+/* Sobre mi */
+
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 800px;
+  text-align: center;
+}
+
+.sobre-mi .origen{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: #974063;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #FF9677;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+.text-bg-primary{
+  background-color: #F54768 !important;
+}
+
+
+/* Proyectos */
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+
+/* Testimonios */
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Nunito' sans-serif;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+.testimonio-info .cliente{
+  font-size: 1.4rem;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo{
+  font-size: 0.9rem;
+}
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: #974063;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid #974063;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Adaptable (Responsivo) */
+@media screen and (max-width: 500px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+
+  .seccion-texto {
+    font-size: 1.1rem;
+  }
+  .seccion-titulo{
+    font-size: 1.9rem;
+  }
+  .proyectos-recientes {
+    padding: 40px;
+  }
+  .proyectos-recientes img {
+    height: 240px;
+  }
+  .hero-fondo-svg{
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  .fondo-html-svg{
+    top: 80%;
+    left: 0;
+  }
+  
+  .fondo-css-svg{
+    left: 15%;
+  }
+  
+  .fondo-js-svg{
+    top: 80%;
+    left: 35%;
+  }
+  
+  .fondo-react-svg{
+    top: 25%;
+    right: 0;
+  }
+  
+  .fondo-bootstrap-svg{
+    top: 80%;
+    right: 15%;
+  }
+  
+  .fondo-vue-svg{
+    top: 25%;
+    right: 35%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
+
+ 
